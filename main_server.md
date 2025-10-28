@@ -11,7 +11,7 @@ No supported authentication methods available (server sent: publickey)
 ```
 说明ssh版本过旧，需升级MobaXterm
 
-### 使用命令行
+### 使用命令行（不推荐）
 配置客户端电脑用户的主目录下的`.ssh`文件夹，修改（没有就新建）`config`文件，追加以下内容
 ```
 Host host_name_1
