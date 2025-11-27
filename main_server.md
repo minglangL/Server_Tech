@@ -148,7 +148,6 @@ hf auth login
 #### 3.下载模型权重
 例如下载`THUDM/GLM-4.1V-9B-Thinking`模型到本地文件夹`/path/your_path`
 ```
-conda activate bench
 hf download THUDM/GLM-4.1V-9B-Thinking --local-dir /path/your_path
 ```
 可以使用`--include`下载指定文件，如下载以.pth结尾的文件
@@ -157,7 +156,7 @@ hf download THUDM/GLM-4.1V-9B-Thinking --include "*.pth" --local-dir /path/your_
 ```
 或下载某个文件夹下文件
 ```
-huggingface-cli download THUDM/GLM-4.1V-9B-Thinking --include "des_folder/*" --local-dir /path/your_path
+hf download THUDM/GLM-4.1V-9B-Thinking --include "des_folder/*" --local-dir /path/your_path
 ```
 
 若**下载数据集**，则需要在命令后加入`--repo-type dataset`指令
