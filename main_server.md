@@ -11,7 +11,7 @@ No supported authentication methods available (server sent: publickey)
 ```
 说明ssh版本过旧，需升级MobaXterm
 
-### 使用命令行（不推荐）
+### 使用命令行
 配置客户端电脑用户的主目录下的`.ssh`文件夹，修改（没有就新建）`config`文件，追加以下内容
 ```
 Host host_name_1
@@ -66,10 +66,16 @@ rm ~/Anaconda3-2025.06-1-Linux-x86_64.sh
 ## 数据使用
 服务器共享数据的目录为`/srv/data`，存放所有人的共享数据，**注意不要修改或删除**。若想要修改，建议复制文件到自己目录下，再进行修改。
 使用说明:
+
 `/srv/data/datasets/` 为数据集文件夹；
+
 `/srv/data/envs_share/` 为共享环境文件夹，仅供激活使用，但不要在其中安装或删除包，如需修改，将其cp到自己目录下再修改；
+
 `/srv/data/model_checkpoints/` 为共享模型的权重文件夹。
+
 可以自行创建文件夹，但请注意文件结构良好。
+
+---
 
 ## 数据下载
 ### 网页数据
@@ -140,7 +146,7 @@ source ~/.bashrc
 ```
 conda activate /srv/data/envs_share/download/
 ```
-（可选）建议登录，某些数据集可能需要登录认证
+（可选）按需登录，某些数据集可能需要登录认证下载
 ```
 hf auth login
 ```
