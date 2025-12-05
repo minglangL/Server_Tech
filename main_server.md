@@ -31,7 +31,7 @@ Host host_name_2
 ssh -t host_name_1
 ```
 #### 传输数据
-使用`scp`命令传输数据，同样配置ssh的config，二者是共享的。
+在**客户端**使用`scp`命令传输数据，同样配置ssh的config，二者是共享的。
 配置后就可以传输文件
 ```
 scp /path/local_file host_name_1:/path/server_dir
